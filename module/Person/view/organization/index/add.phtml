@@ -1,0 +1,13 @@
+<h1>Add an organization</h1>
+
+<?php
+$form = $this->form; /* @var $form \Zend\Form\Form */
+?>
+
+<?= $this->form()->openTag($form); ?>
+
+<?= $this->formRow($form->get('name')) ?>
+
+<?= $this->formInput($form->get('submit')) ?>
+
+<?= $this->form()->closeTag($form); ?>

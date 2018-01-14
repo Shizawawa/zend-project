@@ -1,0 +1,15 @@
+<h1>Add a person</h1>
+
+<?php
+$form = $this->form; /* @var $form \Zend\Form\Form */
+?>
+
+<?= $this->form()->openTag($form); ?>
+
+<?= $this->formRow($form->get('firstname')) ?>
+
+<?= $this->formRow($form->get('lastname')) ?>
+
+<?= $this->formInput($form->get('submit')) ?>
+
+<?= $this->form()->closeTag($form); ?>

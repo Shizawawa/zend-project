@@ -1,0 +1,13 @@
+<h1>Meetups</h1>
+
+<ul>
+    <?php foreach ($this->meetups as $meetup): /* @var $meetup \Rally\Entity\Meetup */ ?>
+        <li><a href="<?= $this->url('meetups/detail', ['action' => 'detail', 'id' => $meetup->getId()]); ?>"><?= $meetup->getTitle() ?></a></li>
+        <div class="btn-group" role="group" aria-label="Post actions">
+            <a class="btn btn-xs btn-default" href="<?= $this->url('meetups/edit', ['action' => 'edit', 'id' => $meetup->getId()]) ?>">Edit</a>
+            <a class="btn btn-xs btn-danger" href="<?= $this->url('meetups/delete', ['action' => 'delete', 'id' => $meetup->getId()]) ?>">Delete</a>
+        </div>
+    <?php endforeach; ?>
+</ul>
+
+<a href="<?= $this->url('meetups/add'); ?>" class="btn btn-primary">Add new</a>

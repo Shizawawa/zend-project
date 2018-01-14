@@ -1,0 +1,9 @@
+<h1>Organizations</h1>
+
+<ul>
+    <?php foreach ($this->organizations as $organization): /* @var $organization \Person\Entity\Organization */ ?>
+        <a href="<?= $this->url('organizations/detail'); ?>"><li><?= $organization->getName() ?></li></a>
+    <?php endforeach; ?>
+</ul>
+
+<a href="<?= $this->url('organizations/add'); ?>" class="btn btn-primary">Add new</a>

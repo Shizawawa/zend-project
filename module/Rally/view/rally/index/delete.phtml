@@ -1,0 +1,13 @@
+<h1>Delete meetup</h1>
+
+<p>Are you sure you want to delete the following meetup?</p>
+
+<ul class="list-group">
+    <li class="list-group-item"><?= $this->escapeHtml($this->meetup->getTitle()) ?></li>
+</ul>
+
+<form action="<?php $this->url('meetups/delete', [], true) ?>" method="post">
+    <input type="hidden" name="id" value="<?= $this->escapeHtmlAttr($this->meetup->getId()) ?>" />
+    <input class="btn btn-default" type="submit" name="confirm" value="Cancel" />
+    <input class="btn btn-danger" type="submit" name="confirm" value="Delete" />
+</form>

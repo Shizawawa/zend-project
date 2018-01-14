@@ -1,0 +1,9 @@
+<h1>Persons</h1>
+
+<ul>
+    <?php foreach ($this->persons as $person): /* @var $person \Person\Entity\Person */ ?>
+        <li><?= $person->getFirstname() ?> <?= $person->getLastname() ?></li>
+    <?php endforeach; ?>
+</ul>
+
+<a href="<?= $this->url('persons/add'); ?>" class="btn btn-primary">Add new</a>

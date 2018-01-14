@@ -1,0 +1,15 @@
+<h1>Meetup Details</h1>
+
+<dl>
+    <dt>Meetup Title</dt>
+    <dd><?= $this->escapeHtml($this->meetup->getTitle()) ?></dd>
+
+    <dt>Meetup Description</dt>
+    <dd><?= $this->escapeHtml($this->meetup->getDescription()) ?></dd>
+
+    <dt>Meetup Date de début</dt>
+    <dd><?= $this->escapeHtml($this->meetup->getDateBegin()) ?></dd>
+
+    <dt>Meetup Date de fin</dt>
+    <dd><?= $this->escapeHtml($this->meetup->getDateEnd()) ?></dd>
+</dl>

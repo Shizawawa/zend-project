@@ -25,15 +25,21 @@ L'entité Meetup est déjà ratachée aux entités Person et Organisation. Seul 
 
 ## Installation avec Composer
 
+```bash
 $ composer clone https://github.com/Shizawawa/zend-project.git
 $ composer install
+```
 
 Une fois installé : 
+```bash
 $ cd path/to/install
 $ php -S 0.0.0.0:8080 -t public/ public/index.php
+```
 
 OR use the composer alias:
+```bash
 $ composer run --timeout 0 serve
+```
 
 L'aaplication sera alors joignable à l'adresse 0.0.0.0:8080 dans votre navigateur
 
